@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=nos">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+    <link rel="stylesheet" href="estilo.css">
+    <title>LP Web Developer</title>
+</head>
+
+<body>
+    <!-- Section Inicio -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/LP/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado"onclick="seleleccionar(this)">HOME</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">ABOUT ME</a></li>
+                            <li><a href="#portfolio"onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto"onclick="seleccionar(this)">CONTACT</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Iconos del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!-- Iconos de las redes sociales -->
+                    <div class="redes">
+                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                      <a href=""><i class="fa-brands fa-facebook"></i></a>
+                      <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Welcome</p>
+                <h2>hello <span> Lucas Pontel</span>, Web Developer</h2>
+                <p class="descripcion">
+                <a href="#portfolio"> Ir a Portafolio </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="Imagen de WhatsApp 2024-07-03 a las 02.42.18_6ab50adf.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-section">Sobre Mi</p>
+            <h2> hello, I am <span> Lucas Pontel</span></h2>
+            <h3>Web Developer</h3>
+            <p> Hello, my name is Pontel Lucas Ezequiel, I am 19 years old, and I am studying the technicatura superiror in sowtware development.
+                The things that call my attention are those that have to do with agronomy and in my free time I like to do sports.</p>
+            
+            <a href="#">Descargar CV</a>
+        </div>
+    </section>
+
+    
+    <!-- SECCION HABILIDADES -->
+    <div class="contenedor-skills" id="skills">
+        <h3>SKILLS</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Html & css</p>
+                <span class="porcentaje">70%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1"></div>
+            </div>
+        </div>
+
+
+        <div class="skill">
+            <div class="info">
+             <p><span class="lista"></span>photoshop</p>
+             <span class="porcentaje">85%</span>
+            </div>
+            <div class="barra">
+                <div id="ps" class="barrra-progreso2"></div>
+            </div>
+        </div>
+
+
+        <div class="skill">
+            <div class="info">
+             <p><span class="lista"></span>Base de datos</p>
+             <span class="porcentaje">60%</span>
+            </div>
+            <div class="barra">
+                <div id="Bd" class="barra-progreso3"></div>
+            </div>
+        </div>
+
+
+        <div class="skill">
+            <div class="info">
+             <p><span class="lista"></span>git & gitHub</p>
+             <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+               <div id="g & gh" class="barra-progreso4"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">MY PROJECTS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="proyecto 1.1.jpeg" alt="">
+                <div class="info">
+                    <h4>descripcion del proyecto</h4>
+                    <p>web design</p>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="proyecto2" alt="">
+                <div class="info">
+                    <h4>descripcion del proyecto</h4>
+                    <p>web design</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="proyecto 3.3.jpeg" alt="">
+                <div class="info">
+                    <h4>descripcion del proyecto</h4>
+                    <p>web design</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="proyecto 4.4.jpeg" alt="">
+                <div class="info">
+                    <h4>descripcion del proyecto</h4>
+                    <p>web design</p>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="proyecto 5.5.jpeg" alt="">
+                <div class="info">
+                    <h4>descripcion del proyecto</h4>
+                    <p>web design</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="proyecto 6.6.jpeg" alt="">
+                <div class="info">
+                    <h4>descripcion del proyecto</h4>
+                    <p>web design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">contact us now</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="full name" class="input-mitad">
+                    <input type="text" placeholder="Email address"class="input-mitad">
+                </div> 
+                <div class="fila">
+                    <input type="text" placeholder="tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your message..." class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Send Message" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>All rights reserved- 2024</p>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+ 
+</body>
+</html>
